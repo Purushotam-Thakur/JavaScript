@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Check and Uncheck all CheckBox Together
+		</title>	
+		<script type="text/javascript">
+
+			function selectBox(bool)
+			{
+				"use strict";
+					var selectall= document.getElementsByName("Colors"), i;
+
+						for (var i = 0; i < selectall.length; i++) {
+							selectall[i].checked=bool;
+						}
+					}	
+		</script>
+
+	</head>
+
+	<body>
+
+			<h1> Hello!</h1><br/>
+			<form style=" ">
+			<input type="checkbox" name="Colors" value="Red"> Red <br/>
+			<input type="checkbox" name="Colors" value="Red"> Green <br/>
+			<input type="checkbox" name="Colors" value="Red"> Blue <br/>
+			<input type="checkbox" name="Colors" value="Red"> Yellow <br/>
+			<input type="checkbox" name="Colors" value="Red"> Brown <br/>
+			<input type="checkbox" name="Colors" value="Red"> Black <br/><br/>
+		</form>
+
+		<a onclick="selectBox(true)" style="cursor:pointer"> Check All </a> <br/><br/>
+		<a onclick="selectBox(false)" style="cursor:pointer"> UnCheck All </a>
+
+		
+	</body>
+
+</html>
